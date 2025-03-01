@@ -1,0 +1,7 @@
+{
+  "project": {
+    "name": "nscpot-discord-rich-presence",
+    "description": "A python application to update your Discord status with what you're playing on ncspot",
+    "version": "0.1.0"
+  }
+}
