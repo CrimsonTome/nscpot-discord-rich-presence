@@ -1,4 +1,4 @@
-from pypresence import Presence
+from pypresence import Presence, ActivityType
 from playerctl_utils import get_artists, get_track_name, get_art_url
 import time
 
@@ -15,6 +15,7 @@ def update_rpc():
         last_track = current_track
         RPC.connect()
         RPC.update(
+        activity_type = ActivityType.LISTENING,
         state=f"{artists}",  # Display artist names
         details=f"{track}",  # Display the track name
         large_image=art_url,  # URL for album art
